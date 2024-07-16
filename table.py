@@ -22,7 +22,7 @@ class Table:
         self.deck_arr = self.generate_deck(deck_type)
         self.player_hands = {player_num: Hand(hand_limit) for player_num in range(1, num_players + 1)}
         self.num_players = num_players
-        self.community_arr = np.zeros(shape=(0, 2), dtype=np.int)
+        self.community_arr = np.zeros(shape=(0, 2), dtype=np.int64)
 
     def generate_deck(self, deck_type):
 
